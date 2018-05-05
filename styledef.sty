@@ -18,15 +18,24 @@
 % used packages
 \usepackage{mathtools}
 \usepackage{listings}
-\usepackage{cite}
 \usepackage[none]{hyphenat} 
-
 \usepackage{multirow}
+
+
+%\usepackage{cite}
 
 % for images
 \usepackage{graphicx}
 \graphicspath{ {materials/img/} }
 
+
+% Bibliography style
+\usepackage[
+backend=biber,
+style=numeric,
+%sorting=ynt,
+language=auto
+]{biblatex}
 
 %\usepackage[style=gost-footnote, % стиль цитирования и библиографии 
 %	language=auto, % получение языка из babel 
