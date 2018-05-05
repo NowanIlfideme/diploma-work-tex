@@ -5,3 +5,5 @@
 *.log
 *.gz
 *.toc
+*.xml
+*.bcf
