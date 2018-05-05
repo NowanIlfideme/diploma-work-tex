@@ -1,39 +1,38 @@
-% possibly change style to "thesis"?
-@misc{coursework_babakhin,
+
+@thesis{coursework_babakhin,
 	author = {Бабахин, Е.},
 	title = {Анализ циклических изменений в экономике Республики Беларусь на основе моделей VAR с Марковскими переключениями состояний},
 	institution = {БГУ},
 	date = {2015},
 	type = {Курсовая работа},
-	note = {Курсовая Работа},
+}
+
+@report{esiMaking,
+	author = {},
+	aauthor = {Малюгин, В.И.},
+	title = {Разработка системы опережающих экономических индикаторов и экономических диффузных индексов для основных видов экономической деятельности и экономики Республики Беларусь в целом с использованием экономико-математических, эконометрических методов и моделей на основе данных системы мониторинга предприятий Национального банка Республики Беларусь: },
+	type = { отчет о НИР (заключ.)},
+	institution = {НИИ ППМИ; рук. В.И. Малюгин},
+	date = {2017},
+	number = {ГР 20162817},
+	location = {Минск},
+	pagetotal = {142},
+}
+
+@inproceedings{esiExtra,
+	author = {Малюгин, В.И. and others},
+	UNKeditor = {editor},
+	title = {Модельные и инструментальные средства для построения и применения индекса экономических настроений белорусской экономики},
+	booktitle = {Проблемы прогнозирования и государственного регулирования социально-экономического развития: материалы XVII Международной конференции},
+	date = {2017},
+	volume = {1},
+	pages = {178-188},
+	organization = {НИЭИ Минэкономики Республики Беларусь},
+	OPTeventtitle = {Проблемы прогнозирования и государственного регулирования социально-экономического развития},
 }
 
 
 
-
-@misc{babakhin,
-	    author = "Бабахин, Е.",
-	    title = "Анализ циклических изменений в экономике Республики Беларусь на основе моделей VAR с Марковскими переключениями состояний",
-	    year = "2015",
-		note="Курсовая работа"
-}
-@misc{esiMaking,
-	title="Разработка системы опережающих экономических индикаторов и экономических диффузных индексов для основных видов экономической деятельности и экономики Республики Беларусь в целом с использованием экономико-математических, эконометрических методов и моделей на основе данных системы мониторинга предприятий Национального банка Республики Беларусь.",
-	author = "Малюгин, В.И.",
-	publisher = "НИИ ППМИ",
-	note="отчет о НИР (заключ.) / НИИ ППМИ; рук. В.И. Малюгин. – Минск, 2017. – 142 с. – №ГР 20162817",
-	pages = "70",
-	number="20162817"
-}
-@misc{esiExtra,
-title="Модельные и инструментальные средства для построения и применения индекса экономических настроений белорусской экономики",
-author = "Малюгин, В.И. and others",
-publisher = "НИЭИ Минэкономики Республики Беларусь",
-note = "Проблемы прогнозирования и государственного регулирования социально-экономического развития: материалы XVII Международной конференции",
-year="2017",
-pages="Т.1 178-188",
-
-}
 @article{mitchellBS,
 	    author = "Barna, T. and Burns, A. and Mitchell, W.",
 	    title = "Measuring Business Cycles",
@@ -77,7 +76,7 @@ pages="Т.1 178-188",
 @article{bryCyclicalAnalysis,
 	    author = "Bry, G. and Boschan, C.",
 	    title = "Cyclical analysis of time series",
-	    journal = "National Burea of Economic Research, Columbia University Press",
+	    journal = "National Bureau of Economic Research, Columbia University Press",
 }
 @article{bodmanCanada,
 	    author = "Bodman, P. and Crosby, M.",
@@ -106,14 +105,17 @@ pages="Т.1 178-188",
 	    pages = "357-384",
 	    year = "1989"
 }
-@misc{hamHP,
-  author       = "Hamilton, J.D.", 
-  title        = "Why You Should Never Use the Hodrick-Prescott Filter",
-  howpublished = "Online at Department of Economics, UC San Diego",
-  month        = "7",
-  year         = "2016",
-  note         = "Revised Jan. 9, 2017"
+
+@unpublished{hamHP,
+	author = {Hamilton, J.D.},
+	title = {Why You Should Never Use the Hodrick-Prescott Filter},
+	date = {Jan. 9, 2017},
+	howpublished = {Online at Department of Economics, UC San Diego},
+	month = {1},
+	year = {2017},
+	pubstate = {Working paper},
 }
+
 @article{malNovopMSVARX,
 	    author = "Malugin, V. and Novopoltsev, A.",
 	    title = "Statistical Estimation and Classification Algorithms for Regime-Switching VAR Model with Exogenous Variables",
@@ -178,13 +180,15 @@ url="http://www.chadfulton.com/topics/state_space_python.html"
   year         = 2016,
   note         = {284 p}
 }
-@ONLINE{oecdCLI,
+
+@online{oecdCLI,
 	author = {OECD},
 	title = {OECD System of Composite Leading Indicators},
 	year = {2012},
 	url = {http://www.oecd.org/std/leading-indicators/41629509.pdf},
 	urldate = {2016-05-26}
 }
+
 @book{mal_methods_nonconstant,
 author="Малюгин, В.И.",
 title="Методы анализа многомерных эконометрических моделей с неоднородной структурой. Научное издание.",
