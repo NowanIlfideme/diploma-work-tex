@@ -26,7 +26,11 @@
 	
 	\subfile{sections/conclusion}
 	
-	\printbibliography
+	% fake chapter чтобы список лит был на одной странице
+	\chapter*{}
+	\addcontentsline{toc}{chapter}{Список Источников}
+	\markboth{Список Источников}{Список Источников}
+	\printbibliography[title=Список Источников]
 	
 	\appendix
 \end{document}

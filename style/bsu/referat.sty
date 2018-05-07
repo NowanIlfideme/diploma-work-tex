@@ -6,20 +6,23 @@
 
 
 % Оформление реферата
-\newcommand{\bsureferat}[3][Реферат]
+\newcommand{\bsureferat}[3][Введение]
 {
-	\vspace{36pt} % Пустое место вверху страницы
-	{
-		\centering
-		\parindent=18pt
-		\normalfont\Large\bfseries
-		
-		%\chaptername ~ \thechapter{} \par % Номер главы - но мы не делаем главой!
-		#1 \par % Заголовок текста с новой строки
-		\nopagebreak % Не отрываем заголовок от текста
-		\vspace{36pt} % Пустое место между заголовком и текстом
-	}
-
+	%\vspace{36pt} % Пустое место вверху страницы
+	%{
+	%	\centering
+	%	\parindent=18pt
+	%	\normalfont\Large\bfseries
+	%	
+	%	%\chaptername ~ \thechapter{} \par % Номер главы - но мы не делаем главой!
+	%	#1 \par % Заголовок текста с новой строки
+	%	\nopagebreak % Не отрываем заголовок от текста
+	%	\vspace{36pt} % Пустое место между заголовком и текстом
+	%}
+	\chapter*{#1}
+	\addcontentsline{toc}{chapter}{#1}
+	\markboth{#1}{#1}
+	
 	\textbf{\@worktype:} #2
 
 	\textbf{Ключевые слова:} \@keywords
