@@ -8,4 +8,8 @@
 *.xml
 *.bcf
 
-_snapshots
+report/_snapshots
+report/build
+
+presentation/_snapshots
+presentation/build

@@ -1,0 +1,121 @@
+
+\documentclass{beamer}
+
+% support unicode
+\input glyphtounicode
+\pdfgentounicode=1
+\pdfmapfile{=cm-super-t2a.map}
+
+% support specifically Russian
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\selectlanguage{\russian}
+
+
+% STYLE
+\usetheme{Malmoe}
+\usecolortheme{default}
+\useoutertheme{tree}
+
+% Uncomment to remove nav
+%\setbeamertemplate{navigation symbols}{}
+
+% Code for section beginning
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{План доклада}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+
+
+% META-INFO
+\title{РАЗРАБОТКА И ПРИМЕНЕНИЕ МОДЕЛЕЙ MSVARX ДЛЯ АНАЛИЗА ЭКОНОМИЧЕСКИХ ЦИКЛОВ}
+\author{Макаревич А.С.}
+\institute[БГУ]{Белорусский Государственный Университет}
+\date[Минск, 2018]{Минск, 2018}
+\subject{text}
+
+
+% 
+\begin{document}
+
+
+	% Title page
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+	\section{Описание задач}
+		\subsection{Анализ экономических циклов}
+		\begin{frame}
+			\frametitle{Задача анализа экономических циклов}
+			
+			\begin{itemize}
+				\item Базовый ряд -- Реальный ВВП РБ (цены 2014 г.)
+				\item Экономический цикл (по НБЭИ США)
+					\begin{itemize}
+						\item объект: тренд ВВП
+						\item фазы: <<рост>> и <<спад>>
+						\item точки: <<пик>> и <<дно>>
+						\end{itemize}
+				\pause
+				\item Опережающий индикатор -- Индекс Экономических Настроений (ИЭН)
+					\begin{itemize}
+						\item по данным сист. мониторинга предприятий НБ РБ
+						\item циклы опережают ВВП на 4-5 месяца
+					\end{itemize}
+			\end{itemize}
+			
+		\end{frame}
+
+		\subsection{Декомпозиция временных рядов}
+		\begin{frame}
+			\frametitle{Декомпозиция временных рядов}
+			
+			Хамильтона
+			
+		\end{frame}
+	
+		\subsection{Модели с переключением состояний}
+		\begin{frame}
+			\frametitle{Модели с переключением состояний}
+			
+			По MS-ARX
+			
+		\end{frame}
+	
+	\section{Экспериментальные исследования}
+		\subsection{Корректировка по Хамильтону}
+		\begin{frame}
+			\frametitle{Корректировка по Хамильтону}
+			
+			Картинки по Хам
+			
+		\end{frame}
+
+		\subsection{Моделирование с MS-ARX}
+		\begin{frame}
+			\frametitle{Моделирование с MS-ARX}
+			
+			Картинки режимов
+			
+		\end{frame}
+	
+	\section{Разработка библиотеки TS4DS}
+		\begin{frame}
+			\frametitle{Библиотека TS4DS}
+			
+			\begin{enumerate}
+				\item content...
+				\item c2
+			\end{enumerate}
+			
+		\end{frame}
+
+	
+\end{document}
