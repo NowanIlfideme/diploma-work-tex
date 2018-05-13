@@ -1,8 +1,18 @@
 \ProvidesPackage{styledef}
 
+
+% Actually support unicode
+\input glyphtounicode
+\pdfgentounicode=1
+
+\pdfmapfile{=cm-super-t2a.map}
+
+
 % Russian support
 \usepackage[utf8]{inputenc}
 \usepackage[T1,T2A]{fontenc}
+
+
 
 % styles from BSU
 \usepackage{./style/bsu/main}
