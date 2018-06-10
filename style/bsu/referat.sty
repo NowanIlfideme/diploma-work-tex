@@ -1,18 +1,12 @@
-\newcommand*{\keywordsru}[1]{\gdef\@keywordsru{#1}}
-\newcommand*{\@keywordsru}{}
+\newcommand*{\keywords}[1]{\gdef\@keywords{#1}}
+\newcommand*{\@keywords}{}
 
-\newcommand*{\keywordsen}[1]{\gdef\@keywordsen{#1}}
-\newcommand*{\@keywordsen}{}
-
-\newcommand*{\worktyperu}[1]{\gdef\@worktyperu{#1}}
-\newcommand*{\@worktyperu}{}
-
-\newcommand*{\worktypeen}[1]{\gdef\@worktypeen{#1}}
-\newcommand*{\@worktypeen}{}
+\newcommand*{\worktype}[1]{\gdef\@worktype{#1}}
+\newcommand*{\@worktype}{}
 
 
 % Оформление реферата
-\newcommand{\bsureferatru}[3][РЕФЕРАТ]
+\newcommand{\bsureferat}[3][Введение]
 {
 	%\vspace{36pt} % Пустое место вверху страницы
 	%{
@@ -29,33 +23,9 @@
 	\addcontentsline{toc}{chapter}{#1}
 	\markboth{#1}{#1}
 	
-	\textbf{\@worktyperu:} #2
+	\textbf{\@worktype:} #2
 
-	\textbf{Ключевые слова:} \@keywordsru
-	
-	#3
-	
-}
-\newcommand{\bsureferaten}[3][ABSTRACT]
-{
-	%\vspace{36pt} % Пустое место вверху страницы
-	%{
-	%	\centering
-	%	\parindent=18pt
-	%	\normalfont\Large\bfseries
-	%	
-	%	%\chaptername ~ \thechapter{} \par % Номер главы - но мы не делаем главой!
-	%	#1 \par % Заголовок текста с новой строки
-	%	\nopagebreak % Не отрываем заголовок от текста
-	%	\vspace{36pt} % Пустое место между заголовком и текстом
-	%}
-	\chapter*{#1}
-	\addcontentsline{toc}{chapter}{#1}
-	\markboth{#1}{#1}
-	
-	\textbf{\@worktypeen:} #2
-	
-	\textbf{Keywords:} \@keywordsen
+	\textbf{Ключевые слова:} \@keywords
 	
 	#3
 	
