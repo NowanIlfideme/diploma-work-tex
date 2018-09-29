@@ -1,0 +1,72 @@
+\newcommand*{\mentor}[1]{\gdef\@mentor{#1}}
+\newcommand*{\@mentor}{}
+
+\newcommand*{\subfaculty}[1]{\gdef\@subfaculty{#1}}
+\newcommand*{\@subfaculty}{}
+
+\newcommand*{\reviewer}[1]{\gdef\@reviewer{#1}}
+\newcommand*{\@reviewer}{}
+
+
+\renewcommand{\maketitle}
+{
+\begin{titlepage}
+  \begin{center}
+  \textbf{
+    \small{БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ}\\
+    \vspace{0.5em}
+    \small{Факультет Прикладной Математики и Информатики}\\
+    \vspace{0.5em}
+    \@subfaculty
+  }
+  \end{center}
+  \begin{flushright}
+  	\begin{minipage}[H]{0.5\textwidth}
+  		\begin{flushleft}
+		    \vspace{2em}
+		    Конкурс на лучшую студенческую работу
+		    по естественным и техническим работам
+	    \end{flushleft}
+	\end{minipage}
+  \end{flushright}
+  
+  \vspace{5em}
+  
+  \begin{center}
+    \textbf{\@title} \\
+    \vspace{3em}
+\iffalse
+   Конкурсная работа
+\fi
+\end{center}
+  
+  \begin{flushright}
+    \begin{minipage}[H]{0.35\textwidth}
+      \begin{flushleft}
+	\@author
+      \end{flushleft}
+    \end{minipage}
+  \end{flushright}
+
+  \vspace{2.5em}
+  
+
+  \begin{flushright}
+    \begin{minipage}[H]{0.35\textwidth}
+      \begin{flushleft}
+        Научный руководитель: \\
+        \@mentor
+      \end{flushleft}
+    \end{minipage}
+  \end{flushright}
+
+  \vspace{1em}
+
+  
+  \vfill
+  
+  \begin{center}
+    Минск \the\year
+  \end{center}
+\end{titlepage}
+}
