@@ -602,7 +602,7 @@
 	\end{enumerate}
 	
 	\begin{figure}
-		\includegraphics{RollingValidation.png}
+		\includegraphics[width=\linewidth]{RollingValidation.png}
 		\caption{Принцип скользящей валидации.}
 		\label{fig:rolling_validation}
 	\end{figure}
@@ -615,13 +615,13 @@
 	Вышеописанный подход ``скользящей валидации'' был использован для оценки точности прогноза для описанных моделей MS-ARX для годовых темпов роста ВВП (GRGDP) и для ВВП, скорректированого по Хамильтону (HamGDP). В качестве ``обычных'' методов для обоих рядов рассматривались модели модели $SARIMAX$ с автоматически подобранными порядками (алгоритм выбора описан в \cite{hynd_autoarima} и имплементирован в пакете Python \textbf{pyramid\_arima} \cite{pyramid_arima}). В таблице \ref{tbl:errors} указаны среднеабсолютые (MAE) и среднеквадратичные (RMSE) ошибки прогнозов моделей для ВВП, скорректированные по Хамильтону, и для годовых темпов роста ВВП. Ниже представлены графики прогнозов моделей.
 	
 	\begin{figure}
-		\includegraphics[width=400pt]{compare_ham.png}
+		\includegraphics[width=\linewidth]{compare_ham.png}
 		\caption{Сравнение скользящих прогнозов по Хамильтону.}
 		\label{fig:rollcompare-ham}
 	\end{figure}
 	
 	\begin{figure}
-		\includegraphics[width=400pt]{compare_gr.png}
+		\includegraphics[width=\linewidth]{compare_gr.png}
 		\caption{Сравнение скользящих прогнозов для темпов роста ВВП.}
 		\label{fig:rollcompare-tr}
 	\end{figure}
@@ -838,7 +838,7 @@
 	
 	Представляя в таком виде $SARIMAX$, возможно делать предсказания с помощью фильтра Калмана. Этот подход используется в пакетах \textbf{statsmodels}\cite{fulton_statespace} и \textbf{ts4ds}. Реализация фильтра Калмана в \textbf{statsmodels} очень эффективная, поэтому он используется в качестве основе для предсказаний в \textbf{ts4ds}. 
 	
-	Ниже показан пример использования модели SARIMAX для прогнозирования на 4 периода вперед для сезонной модели, а также ряд ошибок предсказаний.
+	На рис. \ref{fig:ts4ds-sarimax-example} показан пример использования модели SARIMAX для прогнозирования на 4 периода вперед для сезонной модели, а также ряд ошибок предсказаний (код для получения этих результатов – в листинге).
 	
 	\begin{lstlisting}[language=Python]
 	from ts4ds.estimators.sm_wrap.sarimax import SARIMAX_Estimator
@@ -858,14 +858,14 @@
 	# plot
 	fig, axs = plt.subplots(2, sharex=True)
 	h1, = axs[0].plot(y, color='0.0')
-	h2, = axs[0].plot(y_hat[13:], color='red', linestyle='--')
+	h2, = axs[0].plot(y_hat[13:], color='red', linestyle='–')
 	h4, = axs[1].plot((y_hat-y)[13:], color='0.0')
 	axs[0].legend(handles=[h1,h2,h3],labels=['actual','predicted'])
 	plt.show()
 	\end{lstlisting}
 	
 	\begin{figure}
-		\includegraphics[width=460pt]{sarimax_example.png}
+		\includegraphics[width=\linewidth]{sarimax_example.png}
 		\caption{Пример работы модели SARIMAX.}
 		\label{fig:ts4ds-sarimax-example}
 	\end{figure}
