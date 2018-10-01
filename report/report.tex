@@ -39,7 +39,7 @@
 	
 	\textbf{ОЭСР / OECD} – Организация экономического сотрудничества и развития (Organization for Economic Cooperation and Development);
 	
-	\textbf{НБЭИ / NBER}НБЭИ / NBER – Национальное бюро экономических исследований США (National Bureau of Economic Research)
+	\textbf{НБЭИ / NBER} – Национальное бюро экономических исследований США (National Bureau of Economic Research)
 	
 	\textbf{X13-ARIMA-SEATS} и \textbf{TRAMO/SEATS} – методы сезонной корректировки экономических временных рядов;
 	
@@ -412,7 +412,7 @@
 	В таблице \ref{tbl:tpoints_re} приведены оценки поворотных точек циклов ВВП и ИЭН полученных с помощью фильтров Ходрика – Прескотта и Хамильтона. 
 
 	\begin{table}[]			
-		\caption{Сравнение поворотных точек, полученные разными методами.}
+		\caption{Сравнение поворотных точек, полученные на основании разных методов фильтрации.}
 			\begin{tabular}{|l|l|l|l|l|l|}
 				\hline
 				\multicolumn{1}{|c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Состояние \\ экономики\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Поворотные точки \\ реального ВВП \\ по \cite{esiMakingAlt}\end{tabular}}} & \multicolumn{2}{c|}{ВВП}                                                                                                                                      & \multicolumn{2}{c|}{ИЭН}                                                                                                                                     \\
@@ -629,14 +629,15 @@
 	\begin{table}[]
 		\centering
 		\caption{Сравнение ошибок прогонзов}
-		\label{tbl:errors}
-		\begin{tabular}{llll}
-			& Метрика & MS-ARX & SARIMAX \\
-			\multirow{2}{*}{ВВП по Хамильтону} & MAE    & 0.5646 & 0.0850  \\
-			& RMSE   & 0.6019 & 0.1150  \\
-			\multirow{2}{*}{Годовые темпы роста}       & MAE    & 0.0988 & 0.0137  \\
-			& RMSE   & 0.1005 & 0.0164 
+		\begin{tabular}{l|l|ll|}
+			\cline{2-4}
+			& Метрика & MS-ARX & SARIMAX \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{ВВП по Хамильтону}}       & MAE     & 0.5646 & 0.0850  \\
+			\multicolumn{1}{|l|}{}                                         & RMSE    & 0.6019 & 0.1150  \\ \hline
+			\multicolumn{1}{|l|}{\multirow{2}{*}{Годовые темпы роста ВВП}} & MAE     & 0.0988 & 0.0137  \\
+			\multicolumn{1}{|l|}{}                                         & RMSE    & 0.1005 & 0.0164  \\ \hline
 		\end{tabular}
+		\label{tbl:errors}
 	\end{table}
 	
 	
