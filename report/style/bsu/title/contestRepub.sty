@@ -1,0 +1,72 @@
+\newcommand*{\mentor}[1]{\gdef\@mentor{#1}}
+\newcommand*{\@mentor}{}
+
+
+
+\newcommand*{\reviewer}[1]{\gdef\@reviewer{#1}}
+\newcommand*{\@reviewer}{}
+
+
+\renewcommand{\maketitle}
+{
+\begin{titlepage}
+  \begin{center}
+  \textbf{
+    \small{МИНИСТЕРСТВО ОБРАЗОВАНИЯ РЕСПУБЛИКИ БЕЛАРУСЬ}\\
+    \vspace{0.5em}
+    \small{Белорусский государственный университет}\\
+    \vspace{0.5em}
+  }
+  \end{center}
+  \begin{center}
+  	%\begin{minipage}[H]{0.5\textwidth}
+  	%	\begin{flushleft}
+		    \vspace{2em}
+		    Республиканский конкурс 
+		    научных работ студентов \\
+		    \vspace{2em}
+		    Секция 10. Математика. Методы и алгоритмы вычислительной математики математического моделирования для решения задач экономики, техники и природоведения
+	%    \end{flushleft}
+	%\end{minipage}
+  \end{center}
+  
+  \vspace{5em}
+  
+  \begin{center}
+    \textbf{\@title} \\
+    \vspace{3em}
+\iffalse
+   Конкурсная работа
+\fi
+\end{center}
+  
+  \begin{flushright}
+    \begin{minipage}[H]{0.35\textwidth}
+      \begin{flushleft}
+	\@author
+      \end{flushleft}
+    \end{minipage}
+  \end{flushright}
+
+  \vspace{2.5em}
+  
+
+  \begin{flushright}
+    \begin{minipage}[H]{0.35\textwidth}
+      \begin{flushleft}
+        Научный руководитель: \\
+        \@mentor
+      \end{flushleft}
+    \end{minipage}
+  \end{flushright}
+
+  \vspace{1em}
+
+  
+  \vfill
+  
+  \begin{center}
+    Минск \the\year
+  \end{center}
+\end{titlepage}
+}
